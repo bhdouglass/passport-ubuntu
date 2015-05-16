@@ -1,0 +1,25 @@
+{
+  "name": "passport-ubuntu",
+  "version": "0.1.2",
+  "description": "Ubuntu OpenID authentication strategy for Passport",
+  "main": "lib/passport-ubuntu/index.js",
+  "author": "Brian Douglass",
+  "license": "GPLv3",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bhdouglass/passport-ubuntu.git"
+  },
+  "bugs": {
+    "url": "https://github.com/bhdouglass/passport-ubuntu/issues"
+  },
+  "keywords": [
+    "passport",
+    "openid",
+    "ubuntu"
+  ],
+  "dependencies": {
+    "openid": "^0.5.11",
+    "passport-openid": "^0.3.1",
+    "pkginfo": "^0.3.0"
+  }
+}
