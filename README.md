@@ -29,6 +29,10 @@
       successRedirect: '/auth/me',
       failureRedirect: '/auth/login'
     }));
+    app.post('/auth/ubuntu/return', passport.authenticate('ubuntu', {
+      successRedirect: '/auth/me',
+      failureRedirect: '/auth/login'
+    }));
 
     app.get('/auth/login', function(req, res) {
       res.send('<form action="/auth/ubuntu" method="post"><div><input type="submit" value="Sign In"/></div></form>');
@@ -45,7 +49,7 @@
 
 ## License ##
 
-Copyright (C) 2015 [Brian Douglass](http://bhdouglass.com/)
+Copyright (C) 2017 [Brian Douglass](http://bhdouglass.com/)
 
 This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License version 3, as published
 by the Free Software Foundation.
